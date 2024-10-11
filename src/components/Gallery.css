@@ -1,0 +1,55 @@
+.gallery {
+  padding: 20px;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.masonry-grid_column > div {
+  margin-bottom: 30px;
+}
+
+.masonry-grid_column img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.masonry-grid_column img:hover {
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Ensure at least 3 columns are visible */
+@media (max-width: 700px) {
+  .masonry-grid {
+    margin-left: -15px;
+  }
+  .masonry-grid_column {
+    padding-left: 15px;
+  }
+  .masonry-grid_column > div {
+    margin-bottom: 15px;
+  }
+}
